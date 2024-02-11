@@ -5,11 +5,8 @@ import Navbar from "./component/Navbar";
 import Textform from "./component/Textform";
 import React, { useState } from 'react'
 import {
-  createBrowserRouter,
-  RouterProvider,
   Routes,
   Route,
-  Link,
   BrowserRouter,
 } from "react-router-dom";
 
@@ -48,7 +45,7 @@ function App() {
         <Alert alert={alert} />
         <div className="container my-3">
         <Routes>
-            <Route path="/Textform" element={<Textform showAlert={showAlert} mode={mode} heading="Write Something Here" />} />
+            <Route path="/" element={<Textform showAlert={showAlert} mode={mode} heading="Write Something Here" />} />
           </Routes>
         </div>
         <div className="container">
